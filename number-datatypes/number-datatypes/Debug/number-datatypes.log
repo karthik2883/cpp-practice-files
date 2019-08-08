@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\joelerego\Desktop\Code\number-datatypes\number-datatypes\Source.cpp(10,35): warning C4305:  'initializing': truncation from '__int64' to 'long'
+C:\Users\joelerego\Desktop\Code\number-datatypes\number-datatypes\Source.cpp(10,18): warning C4309:  'initializing': truncation of constant value
+C:\Users\joelerego\Desktop\Code\number-datatypes\number-datatypes\Source.cpp(13,36): warning C4305:  'initializing': truncation from '__int64' to 'short'
+C:\Users\joelerego\Desktop\Code\number-datatypes\number-datatypes\Source.cpp(13,19): warning C4309:  'initializing': truncation of constant value
+  number-datatypes.vcxproj -> C:\Users\joelerego\Desktop\Code\number-datatypes\Debug\number-datatypes.exe
