@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\joelerego\Desktop\cpp-practice-files\conditionals\conditionals\Log.h(6,1): error C2084:  function 'void Log(const char *)' already has a body
+C:\Users\joelerego\Desktop\cpp-practice-files\conditionals\conditionals\Log.h(5): message :  see previous definition of 'Log'
+C:\Users\joelerego\Desktop\cpp-practice-files\conditionals\conditionals\Source.cpp(10,3): error C2065:  'Log': undeclared identifier
