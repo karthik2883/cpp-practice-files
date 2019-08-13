@@ -4,7 +4,7 @@
 
 //Pointers are integers that hold address. 
 //They don't have any "type". 
-//We mention the "type" of pointer only to specify what type of data the pointer presumably points to.
+//The "type" of pointer only specifies what type of data the pointer presumably points to.
 
 
 int main()
