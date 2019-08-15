@@ -7,30 +7,39 @@ public:
 	const int LogLevelWarning = 1;
 	const int LogLevelInfo = 2;
 private:
-	int m_LogLevel = 2;
+	int m_LogLevel = LogLevelInfo;
 public:
 	void SetLevel(int level)
 	{
 		m_LogLevel = level;
 	}
+	
 	void Error(const char* message)
 	{
-		std::cout << "[ERROR]:" << message << std::endl;
+		if (m_LogLevel >= LogLevelError)
+			std::cout << "[ERROR]:" << message << std::endl;
 	}
+	
 	void Warn(const char* message)
 	{
-		std::cout << "[WARNING]:" << message << std::endl;
+		if (m_LogLevel >= LogLevelWarning)
+			std::cout << "[WARNING]: " << message << std::endl;
 	}
+	
 	void Info(const char* message)
 	{
-		std::cout << "[INFO]:" << message << std::endl;
+		if (m_LogLevel >= LogLevelInfo)
+			std::cout << "[INFO]: " << message << std::endl;
 	}
 };
 
 int main()
 {
 	Log log;
-	log.SetLevel(LogLevelWarning);
-	log.Warn("Hello");
+	log.SetLevel(log.LogLevelWarning);
+	std::cout << "Your log level is: " << log.LogLevelWarning << std::endl;
+	log.Warn("This is a Warning");
+	log.Error("This is an error");
+	log.Info("This is an info message");
 	std::cin.get();
 }

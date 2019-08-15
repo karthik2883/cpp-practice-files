@@ -1,2 +1,2 @@
 ﻿  Source.cpp
-C:\Users\joelerego\Desktop\cpp-practice-files\log-class\log-class\Source.cpp(34,15): error C2065:  'LogLevelWarning': undeclared identifier
+  log-class.vcxproj -> C:\Users\joelerego\Desktop\cpp-practice-files\log-class\Debug\log-class.exe
